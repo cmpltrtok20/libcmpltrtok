@@ -1,8 +1,8 @@
-# Brief intro to libcmpltrtok
+# A brief intro to libcmpltrtok
 
 [libcmpltrtok](https://github.com/cmpltrtok20/libcmpltrtok) is a collection of the common C routines used in [Cmpltrtok](https://github.com/cmpltrtok20)'s projects, such as:
 
- - [libtvtsc](https://github.com/cmpltrtok20/libtvtsc): a C translation of the python code for scalar recording of [TVTS (Trackable and Visible Training System)](https://github.com/cmpltrtok20/tvts) in order to let the user uses TVTS in C
+ - [libtvtsc](https://github.com/cmpltrtok20/libtvtsc): a C translation of the python code for the scalar recording of [TVTS (Trackable and Visible Training System)](https://github.com/cmpltrtok20/tvts) in order to let the user uses TVTS in C
  - The author's other C projects that are under development.
 
 Currently, **only Linux platforms** are considered. Maybe the user could run it on other Unix-like platforms, but it is not tested.
