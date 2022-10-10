@@ -123,6 +123,10 @@ char *cmp_path_join(const char *path1, const char *path2);
 char *cmp_path_join_many_worker(const char *path1, ...);
 #define cmp_path_join_many(path1, ...) cmp_path_join_many_worker(path1, __VA_ARGS__, (void *) 0)
 
+/* path.cpp */
+int cmp_get_prefix_from_path(const char* path, const char* ext, int force, char **ppchar);
+char *cmp_get_path_from_prefix(const char* prefix, const char* ext);
+
 /* pointer.c */
 extern void* cmp_glb_init_brk;
 void cmp_set_init_brk();
@@ -135,6 +139,10 @@ char *cmp_substr_with_alloc(const char *inpStr, const size_t startPos, const siz
 void cmp_strncpy(char *dest, const char *src, const size_t n);
 char *cmp_strncat_worker(const char *dest, const size_t n, ...);
 #define cmp_strncat(dest, n, ...) cmp_strncat_worker(dest, n, __VA_ARGS__, (void *) 0)
+
+/* string.cpp */
+char *cmp_str_replace_all(const char* search, const char* replace, const char* subject);
+char *cmp_escape_regex(const char* search);
 
 /* time.c */
 long long cmp_current_timestamp();
